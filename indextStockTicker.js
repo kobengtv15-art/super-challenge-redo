@@ -21,7 +21,7 @@ function renderStockData(freshData) {
 
     const priceDirection = price > prevPrice ? 'greenarrow.svg': price < prevPrice ? 'redarrow.svg': 'arrowside.svg'
     const imgholder = document.createElement('img')
-    imgholder.src = `../Super challenge/stock ticker project/img/${priceDirection}`
+    imgholder.src = `img/${priceDirection}`
     imgholder.alt = 'Price direction'
     stockDisplayPriceIcon.innerHTML = ''
     stockDisplayPriceIcon.appendChild(imgholder)
